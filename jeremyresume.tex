@@ -1,0 +1,164 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Jeremy Moyers}{January 21, 1991}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:jeremy.at.jeremymoyers.coml}{jeremy\mbox{}@\mbox{}jeremymoyers.com}\sbull
+(858) 775-4489
+\\
+677 7th ave 110\sbull
+San Diego\thinspace {\large \sc }\sbull
+California
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Education}
+
+\headedsection
+  {\href{https://www.calpoly.edu}{California Polytechnic State University, San Luis Obispo}}
+  {\textsc{San Luis Obispo, California}} {%
+  \headedsubsection
+    {Bachelor degree in Computer Science}
+    {2014}
+    {\bodytext{}}
+}
+\vspace{-0.8em}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Programming Languages and Frameworks:}
+  {Swift, Objective-C, Cocoa, C\#, Xamarin, .Net, C, Ruby on Rails }
+
+\vspace{0.5em}
+\inlineheadsection
+  {Technical Experience:}
+  {Git, Agile Development, Jenkins Continuous Integration, Jira, Nunit, XCTest, Microsoft App Center, Hockey App \& Test Flight }
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://seamgen.com}{Seamgen, LLC}}
+  {\textsc{San Diego, California}} {%
+  
+  \headedsubsection
+    {iOS Engineer}
+    {Nov \apo15 -- present}
+    {\bodytext{Built and launched applications for five different clients often working as tech lead. Job responsibilities include: participating in the agile software development life cycle, estimating level of effort, designing software architecture, implementing continuous integration pipelines, supporting QA with test cases, analyzing production crash reports, performing code reviews, writing tests, writing code and fixing bugs.}}
+
+  \headedsubsection
+  {Bump App - iOS Xamarin MvvmCross}
+  {}
+  {\bodytext{A UI and animation heavy social network for meeting people and finding events local to your area.}}
+  
+   \headedsubsection
+  {San Diego Comic Con - Windows WPF Prism}
+  {}
+  {\bodytext{OSPA (onsite printing application) a windows desktop application for managing the comic con convention. OSPA's features include bulk printing tickets, checking guests into the event, purchasing new tickets, distributing tickets for companies and more.}}
+  
+   \headedsubsection
+  {Well Rx - iOS Xamarin MvvmCross}
+  {}
+  {\bodytext{Pharmaceutical drug pricing application that makes heavy use of Core Location and iBeacon technology to help users find discounts on prescription drugs.}}
+  
+   \headedsubsection
+  {Buffini - iOS Xamarin MvvmCross}
+  {}
+  {\bodytext{Real Estate coaching and sale management application.}}
+  
+   \headedsubsection
+  {Rocketing - iOS Swift}
+  {}
+  {\bodytext{Instagram based social network for finding fun things happening around you.}}  
+}
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.hotbsoftware.com}{HOTB Software Solutions} }
+  {\textsc{Irvine, California}} {%
+  \headedsubsection
+    {Lead iOS Developer}
+    {Aug \apo14 -- Nov \apo15}
+    {\bodytext{Designed and developed a native iOS app for a high traffic social network. Contributed to the backend API design of utilizing AWS dynamoDB and Amazon s3. Administered the app through the App Store approval process.}}
+}
+
+\headedsection
+  {\href{www.google.com}{HomeSlice}}
+  {\textsc{San Luis Obispo, California}} {%
+
+  \headedsubsection
+    {Co-Founder and Full Stack Developer}
+    {Mar \apo13 -- Apr \apo14}
+    {\bodytext{HomeSlice is a social network enabling roommates to their manage chores, supplies, and bills. Designed and developed the native HomeSlice iOS app and the Ruby on Rails API. Worked with a team of android developers to successfully port HomeSlice to the android platform.}}
+}
+
+\headedsection
+  {\href{www.google.com}{Rosetta/Level Studios}}
+  {\textsc{San Luis Obispo, California}} {%
+
+  \headedsubsection
+    {iOS Engineering Intern}
+    {Oct \apo11 -- Mar \apo13}
+    {\bodytext{Built an internal facing iOS application with a cakePHP RESTful API used for managing project statuses of different development teams.}}
+}
+
+\headedsection
+  {\href{www.google.com}{Northrop Grumman}}
+  {\textsc{San Diego, California}} {%
+
+  \headedsubsection
+    {Summer Intern}
+    {July \apo10 -- Dec \apo10}
+    {\bodytext{Built and designed an internal facing .net Web Application for reporting maintenance issues to the companies facilities department.}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+
+
+
+\end{document}
+
+＀
