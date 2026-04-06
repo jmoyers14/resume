@@ -14,7 +14,7 @@
 \documentclass[10pt,a4paper]{article}
 
 % Set the page margins.
-\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage[a4paper,margin=0.6in]{geometry}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -31,143 +31,127 @@
 
 
 % title on top of the document
-\maintitle{Jeremy Moyers}{January 21, 1991}{Last update on \today}
+\maintitle{Jeremy Moyers}{}{}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
-% \noindent prevents paragraph's first lines from indenting
-% \mbox is used to obfuscate the email address
-% \sbull is a spaced bullet
-% \href well..
-% \\ breaks the line into a new paragraph
-\noindent\href{mailto:jeremy.at.jeremymoyers.coml}{jeremy\mbox{}@\mbox{}jeremymoyers.com}\sbull
-(858) 775-4489
-\\
-3130 Groton Way Unit 1\sbull
-San Diego\thinspace {\large \sc }\sbull
-California
+\noindent San Diego, CA\sbull
+(858) 775-4489\sbull
+\href{mailto:jeremy@jeremymoyers.com}{jeremy\mbox{}@\mbox{}jeremymoyers.com}\sbull
+\href{https://github.com/jmoyers14}{github.com/jmoyers14}
 
-\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\spacedhrule{0.9em}{-0.4em}
+
+\roottitle{Technical Skills}
+
+\inlineheadsection
+  {Languages \& Frameworks:}
+  {JavaScript/TypeScript, React, React Native, Node.js, Swift}
+
+\inlineheadsection
+  {Backend \& APIs:}
+  {Express, Fastify, tRPC, MongoDB, PostgreSQL}
+
+\inlineheadsection
+  {Infrastructure \& DevOps:}
+  {AWS, Google Cloud Run, GitHub Actions, Bitrise, CI/CD}
+
+\inlineheadsection
+  {AI \& Tooling:}
+  {Vercel AI SDK, MCP server development, Claude Code}
+
+\spacedhrule{1.0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\textbf{Senior Software Engineer II} · \href{https://www.trovatrip.com}{TrovaTrip}}
+  {\textsc{Sep \apo21 -- Present}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Full stack engineer on a multi-tenant email marketing platform that sends 800k+ emails per month.
+    \item Lead engineer for the TrovaTrip mobile application built with React Native, MongoDB, and Google Cloud that has supported 1,000+ trips. Won the company's ``Light the Way'' award for leadership of the mobile team. Manage the iOS and Android release process.
+    \item Full stack engineer on an audience survey application that has received over 1 million survey submissions.
+    \item Designed a role-switching feature allowing users to move between traveler and host roles.
+    \item Integrated AI/LLM tooling via Vercel AI SDK to enable natural language MongoDB querying; presented Claude Code integration strategy to the engineering team.
+    \item Worked on many features including automated trip cancellations, configurable promotional codes, itinerary builder, and host-level configurations.
+  \end{itemize}
+}
+
+\headedsection
+  {\textbf{Senior Software Engineer} · \href{http://seamgen.com}{Seamgen, LLC}}
+  {\textsc{Nov \apo15 -- Aug \apo21}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Delivered mobile and web applications for a variety of clients using React, React Native, native iOS, Xamarin, and C\# .NET.
+    \item Built a full stack patient consent and DNA testing app for Avellino Labs using Swift and React/Redux.
+    \item Developed a web portal for Disability Insurance Services enabling brokers to catalog clients and generate rate proposals.
+    \item Developed a mobile encyclopedia for Specialty Produce with daily content updates via in-app purchases.
+    \item Built the onsite ticketing application for San Diego Comic-Con, handling bulk printing, guest check-in, and ticket distribution.
+  \end{itemize}
+}
+
+\headedsection
+  {\textbf{iOS Developer} · \href{https://hotbsoftware.com/}{HOTB Software Solutions}}
+  {\textsc{Aug \apo14 -- Nov \apo15}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Developed a native iOS social networking app; contributed to AWS DynamoDB + S3 backend API design and managed App Store submission.
+  \end{itemize}
+}
+
+\headedsection
+  {\textbf{Full Stack Developer} · HomeSlice}
+  {\textsc{Mar \apo13 -- Apr \apo14}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Built a native iOS app and Ruby on Rails API for a roommate management application.
+  \end{itemize}
+}
+
+\headedsection
+  {\textbf{iOS Developer Intern} · \href{https://level-studios.com/}{LEVEL Studios}}
+  {\textsc{Oct \apo11 -- Jul \apo13}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Worked alongside a team of graphic designers to develop an iOS application with a cakePHP backend for internal company use.
+  \end{itemize}
+}
+
+\headedsection
+  {\textbf{Summer Intern} · \href{https://www.northropgrumman.com/}{Northrop Grumman}}
+  {\textsc{July \apo10}} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item Developed an internal web application for facilities request management.
+  \end{itemize}
+}
+
+\spacedhrule{0.5em}{-0.4em}
 
 \roottitle{Education}
 
 \headedsection
   {\href{https://www.calpoly.edu}{California Polytechnic State University, San Luis Obispo}}
-  {\textsc{San Luis Obispo, California}} {%
+  {} {%
   \headedsubsection
-    {Bachelor degree in Computer Science}
+    {B.S. Computer Science}
     {2014}
     {\bodytext{}}
 }
-\vspace{-0.8em}
-
 
 \spacedhrule{0.5em}{-0.4em}
 
-\roottitle{Programming Languages}
+\roottitle{Side Projects}
 
-\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
-  {}
-  {Swift, JavaScript, C\#, Objective-C, C }
-
-\spacedhrule{1.6em}{-0.4em}
-
-\roottitle{Experience}
-
-\headedsection  % sets the header for the section and includes any subsections
-  {\href{http://seamgen.com}{Seamgen, LLC}}
-  {\textsc{Nov \apo15 -- Present}} {%
-  \vspace{0.8em}
-  
-  \headedsubsection
-  {AvaGen, Avellino Labs USA Inc, Full Stack Developer}
-  {6 months}
-  {\bodytext{\emph{Native Swift, React/Redux web frontend, C\# .net core} \vspace{0.4em} \\ Optimized for iPad and iPhone AvaGen enables physicians to collect patient consent for DNA testing and notifies patients when test results are available from the lab. Technologies include UIKit and Core Location.}}
-
-  \headedsubsection
-  {Disability Insurance Services, Front End Developer}
-  {4 months}
-  {\bodytext{\emph{React Redux} \vspace{0.4em} \\ A web portal used by insurance brokers for cataloging client information and generating different insurance rate proposals.}}
-
-  \headedsubsection
-  {Specialty Produce, Extraordinaire Tomatoes Inc, Mobile Developer}
-  {1.5 years to present}
-  {\bodytext{\emph{Xamarin Forms} \vspace{0.4em} \\ A mobile encyclopedia with thousands of produce items and recipes. Daily updates available to subscribers through Apple In-app purchases and Google Play In-app Billing.}}
-
-  \headedsubsection
-  {Bump App, Bump LLC, Mobile Developer}
-  {3 months}
-  {\bodytext{\emph{Xamarin Native} \vspace{0.4em} \\ A social network for sharing experiences and exploring your surroundings in real time. Technologies used include Core Location, MapKit and AVFoundation.}}
-
-   \headedsubsection
-  {Script Save Well RX, Medical Security Card Company LLC, Mobile Developer}
-  {6 months}
-  {\bodytext{\emph{Xamarin Native} \vspace{0.4em} \\ Script Save Well Rx enables users to search for savings on prescription medicines and compare prices at pharmacies in their area. Technologies used include Core Location, MapKit and iBeacon.}}
-
-   \headedsubsection
-  {Referral Maker CRM, Buffini and Company, Mobile Developer}
-  {4 months}
-  {\bodytext{\emph{Xamarin Native} \vspace{0.4em} \\ Real Estate coaching CRM application to help agents generate consistent and predictable stream of referred and repeat business. Technologies used include Contacts, Core Location, AVFoundation and MapKit.}}
-
-   \headedsubsection
-  {Rocketing for Instagram, Rocketing Apps LLC, Mobile Developer}
-  {6 months}
-  {\bodytext{\emph{Native Swift} \vspace{0.4em} \\ Social application for finding people places parties anywhere in the world. Technologies used include Contacts, Core Location, AVFoundation and Core Animation}}  
-  
-   \headedsubsection
-  {Onsite Ticketing Application, San Diego Comic Con, C\# WPF Developer}
-  {6 months}
-  {\bodytext{\emph{C\# WPF} \vspace{0.4em} \\ OSPA (onsite printing application) a windows desktop application for managing the comic con convention. OSPA's features include bulk printing tickets, checking guests into the event, purchasing new tickets, distributing tickets for companies and more.}}
-  
-  
-}
-\vspace{0.8em}
-\headedsection  % sets the header for a subsection and contains usually body text
-  {\href{http://www.hotbsoftware.com}{HOTB Software Solutions} }
-  {\textsc{Aug \apo14 -- Nov \apo15}} {%
-  \headedsubsection
-    {iOS Developer}
-    {}
-    {\bodytext{\emph{Native Objective-C} \vspace{0.4em} \\Developed a native iOS app for a social network. Contributed to the backend API design of utilizing AWS dynamoDB and Amazon s3. Administered the app through the App Store approval process.}}
-}
-
-\vspace{0.8em}
 \headedsection
-  {\href{www.google.com}{HomeSlice}}
-  {\textsc{Mar \apo13 -- Apr \apo14}} {%
-
-  \headedsubsection
-    {Full Stack Developer}
-    {}
-    {\bodytext{\emph{Native Objective-C, Ruby on Rails} \vspace{0.4em} \\ HomeSlice is a social network enabling roommates to their manage chores, supplies, and bills. Designed and developed the native HomeSlice iOS app and the Ruby on Rails API.}}
+  {\href{https://chromewebstore.google.com/detail/riff-repeater/jlllikemcgiipobbgjlledoojdlhhgjd}{Riff Repeater} -- Chrome Extension}
+  {} {%
+  \begin{itemize}
+    \setlength{\itemsep}{0.4em}
+    \item A Chrome extension for isolating and replaying YouTube video segments using customizable timestamp hotkeys. 220+ installs with no marketing since launch.
+  \end{itemize}
 }
-
-\vspace{0.8em}
-\headedsection
-  {\href{www.google.com}{Rosetta/Level Studios}}
-  {\textsc{Oct \apo11 -- Mar \apo13}} {%
-
-  \headedsubsection
-    {iOS Engineering Intern}
-    {}
-    {\bodytext{\emph{Native Objective-C} \vspace{0.4em} \\ Built an internal facing iOS application with a cakePHP RESTful API used for managing project statuses of different development teams.}}
-}
-
-\vspace{0.8em}
-\headedsection
-  {\href{www.google.com}{Northrop Grumman}}
-  {\textsc{July \apo10 -- Dec \apo10}} {%
-
-  \headedsubsection
-    {Summer Intern}
-    {}
-    {\bodytext{\emph{VB.NET} \vspace{0.4em} \\ Built and designed an internal facing .net Web Application for reporting maintenance issues to the companies facilities department.}}
-}
-
-\spacedhrule{0.5em}{-0.4em}
-
-
-
 
 
 \end{document}
